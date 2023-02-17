@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>//atrray literal form
+        var family=['siferh','gedam','melke'];
+        var agote=['beza','yengus','abrsh','abu']
+    var k=family[0];//to concatenet two or moe arrays
+    var allf=family.concat(agote);
+    document.write(allf+'</br>');
+    //tochange values
+ 
+    family[0]="selam"
+    document.write(family[0]+'</br>');
+    document.write(family+'</br>');
+    document.write(k+'</br>');
+    //to know the numbers of
+    document.write(family.length+'</br>');
+    //to add values to array
+    family.push("selome");//add to last
+    family.splice(1,2,"sinte","mulu");//replace ay place
+
+    document.write(family+'</br>');
+    family.pop();//delet last
+    family.shift();//delet first
+    document.write(family+'</br>');
+    
+    //to show values
+    document.write(familiy[family.length-1]); 
+//by using key wird new
+      var girls=new array("hiwot","selome","selam");
+      document.write(girls.length+'</br>');
+</script>
+</body>
+</html>

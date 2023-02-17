@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    //to create objects in js
+  var student={
+    name:"selam", id:1822, sex:"f",dept:"software",age:20
+  };
+  document.write(student.name+"</br>",student.id+"</br>",student.sex +"</br>",student.dept+"</br>",student.age+"</br>");//to access literal objects
+
+function student (name,id,sex,dept,age){
+    this.name=name;
+    this.id=id;
+    this.sex=sex;
+    this.dept=dept;
+    this.age=age;
+  }
+  s=new student("selam",1822,"f","software",20);
+  document.write(s.name+"</br>",s.id +"</br>",s.sex +"</br>",s.dept+"</br>",s.age+"</br>");//to access  instace object
+  //js array objects
+  var family=['siferh','gedam','melke'];
+  var k=family[0];
+  document.write(family[0]);
+  var girls=new array("hiwot","selome","selam");
+  document.write(girls.length+'</br>');
+
+  </script>  
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<br><h1>javascript codes
+     
+</h1>
+    <h1>Arthematic Oprators</h1>
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mul"></p>
+    <p id="div"></p>
+    <p id="rem"></p>
+    <p id="inc"></p>
+    <p id="dec"></p>
+    <h1>comparision  Oprators</h1>
+    <p id="eq"></p>
+    <p id="not e"></p>
+    <p id="gre"></p>
+    <p id="less"></p>
+    <h1>Assignment Oprators</h1>
+    <p id="ass"></p>
+    <p id="assm"></p>
+    <p id="assd"></p>
+    <p id="assml"></p>
+    <h1>Logical Oprators</h1>
+    <p id="and"></p>
+    <p id="or"></p>
+    <p id="not"></p>
+    <script>
+        //js has 4 out put possiblities
+        //innerhtml
+        //docment.write
+        //console.log
+        //window.write
+        var x=10
+    ,y=20,z=1;
+    document.getElementById("add").innerHTML="the values of x+y="+(x+y);
+    document.getElementById("sub").innerHTML="the values of x-y="+(x-y);
+    document.getElementById("sub").innerHTML="the values of x*y="+(x*y);
+    document.getElementById("mul").innerHTML="the values of x*y="+(x*y);
+    document.getElementById("div").innerHTML="the values of x/y="+(x/y);
+    document.getElementById("rem").innerHTML="the values of x%y="+(x%y);
+    document.getElementById("dec").innerHTML="the values of x--="+(x-z);
+    document.getElementById("inc").innerHTML="the values of x++="+(x+z);
+    document.getElementById("eq").innerHTML="the values of x==y=>"+(x==y);
+    document.getElementById("not e").innerHTML="the values of x!=y=>"+(x!=y);
+  
+    document.getElementById("gre").innerHTML="the values of x>y=>"+(x>y);
+    document.getElementById("less").innerHTML="the values of x less y=>"+(x<y);//assignment
+   
+    document.getElementById("ass").innerHTML="the values of x+=y="+(x+=y);
+    document.getElementById("assm").innerHTML="the values of x-=y=>"+(x-=y);
+    
+    document.getElementById("assml").innerHTML="the values of x*=y=:"+(x*=y);
+    document.getElementById("assd").innerHTML="the values of x/=y=>"+(x/=y);
+    //logicall oprator
+    document.getElementById("and").innerHTML="the values of 1&&2="+(x<y&&y>x);
+    document.getElementById("or").innerHTML="the values of 1||2="+(x==y||y<x);
+    
+    document.getElementById("not").innerHTML="the values of 1!2=" + !(x==y||y<x);
+    if(x>8){document.write("x is greater"+"</br>");}
+    else if(x>10) {document.write("x is higher"+"</br>");}
+    else if(x==10) {document.write("x is equal"+"</br>");} 
+    else if(x<10) {document.write("x is less+"+"</br>");}    
+    else {{document.write("x is not greater"+"</br>");}}
+    ;
+
+    var m=0
+    ,n=1;
+    document.write("start while loop...."+"</br>");
+    while(m<10){
+        document.write(m +"</br>");
+        m++;
+    }
+   
+    document.write("start do while loop...."+"</br>"); 
+do {document.write(n +"</br>");
+    n++;
+}
+while(n<=5);
+document.write("for loop start"+"</br>")
+for(let i=1;i<=5;i++){
+    document.write(i +"</br>");
+}
+document.write("for sum start"+"</br>")
+sum=0;
+for(let i=1;i<=5;i++){
+    sum+=i;
+   
+} document.write( "the sum of numbers is" +sum+"</br>");
+document.write("for in loop  start"+"</br>")
+ var student={fname:"selam",lname:"siferh",age:"20",dpt:"software"};
+var k,r;
+for(k in student){
+    r=student[k];
+    document.write(k+"=>"+r +"</br>")
+
+}
+document.write( "</br>");
+ var money={kiray:600,shinkurt:200,samuna:200,libs:300};
+var l,m;
+var sum=0;
+
+for(l in money){
+    sum=sum+money[l];
+    m=money[l]; 
+    document.write(l+ "=>"+m+"</br>");
+
+}
+
+document.write( "sum="+sum+"</br>");
+document.write( "</br>");
+string="selam tube";
+var s,c;
+for (s in string){
+    c=string[s];
+    document.write(c+"</br>" );
+
+}
+string="123447";
+var s,c;
+for (s in string){
+    c=string[s];
+    document.write(c+"</br>" );
+
+}
+var t=10,w=20;
+document.write("<h1>js switch statments start</h1>"+"</br>" );
+switch(w){
+    case 1: document.write("w is one"+"</br>" );
+    break;
+    case 5: document.write("w is five"+"</br>" );
+    break;
+    case 7: document.write("w is seven"+"</br>" );
+    break;
+    case 10: document.write("w is ten"+"</br>" );
+    break;
+    default:document.write("w has other values"+"</br>" );
+    
+}
+document.write("<h1>js function  start</h1>"+"</br>" );
+function selam (){
+    document.write("selam has 7 family members including  you"+"</br>" );
+}
+selam();
+function selome (){
+    window.alert("you want to enter this page?" );
+  }
+  selome();
+
+function haile (){
+    console.log("selome has 7 family members including  you" );
+}
+haile();
+function sif(){
+    alert("lijjoche hoy allachhu?" );
+}
+  function hiwot (){
+    window.alert("hiwot has 3 family members including  you" );
+  }
+  
+  function gedam (){
+    window.alert("hulem tetenkeku please lijoche adera!!!"+"</br>" );
+  }
+  //to create objects in js
+var student={
+    name:"selam", id:1822, sex:"f",dept:"software",age:20
+  };
+  document.write(student.name+"</br>",student.id+"</br>",student.sex +"</br>",student.dept+"</br>",student.age+"</br>");
+   /* function student (name,id,sex,dept,age){
+    this.name=name;
+    this.id=id;
+    this.sex=sex;
+    this.dept=dept;
+    this.age=age;
+  }
+  s=new student("selam",1822,"f","software",20);
+  document.write(s.name+"</br>",s.id +"</br>",s.sex +"</br>",s.dept+"</br>",s.age+"</br>");*/
+    </script>
+    
+        <button type="button" onclick="hiwot() ">click here</button> 
+</br>
+</br>
+</br>
+     <form ><input type="button" onclick="gedam()" value="listen me"></form>
+    </br>
+</br>
+</br>
+     <form ><input type="button" onclick="sif()" value="abet abate"></form>
+    
+</body>
+</html>
